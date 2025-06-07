@@ -6,6 +6,7 @@ import About from "./components/About"
 import Education from "./components/Education"
 import Contact from "./components/Contact"
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Education/>
         <Contact/>
         <SpeedInsights/>
+        <Analytics/>
       </main>
     </div>
   )

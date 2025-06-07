@@ -51,7 +51,7 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
             <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg">
-                {['home', 'skills', 'experience', 'about', 'education', 'contact'].map((item) => (
+                {['Home', 'Skills', 'Experience', 'About', 'Education', 'Contact'].map((item) => (
                 <button
                     key={item}
                     onClick={() => scrollToSection(item)}
