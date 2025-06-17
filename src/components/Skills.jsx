@@ -10,22 +10,28 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaGithubSquare } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 import { SiJquery } from "react-icons/si";
+import { FaNode } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 
 
 const Skills = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const skills = [
-    { name: "React", icon: <FaReact /> , color: "from-blue-400 to-blue-600" },
+    { name: "ReactJS", icon: <FaReact /> , color: "from-blue-400 to-blue-600" },
     { name: "HTML5", icon: <TiHtml5 /> , color: "from-blue-500 to-indigo-600" },
     { name: "JavaScript", icon: <SiJavascript /> , color: "from-yellow-400 to-orange-500" },
     { name: "Bootstrap", icon: <RiBootstrapFill />, color: "from-green-400 to-green-600" },
     { name: "CPP", icon: <TbBrandCpp />, color: "from-orange-400 to-red-500" },
-    { name: "Python", icon: <FaPython />, color: "from-green-500 to-blue-500" },
     { name: "CSS3", icon: <IoLogoCss3 />, color: "from-pink-400 to-purple-600" },
     { name: "Tailwind", icon: <RiTailwindCssFill />, color: "from-green-600 to-teal-600" },
     { name: "Git", icon: <FaGithubSquare />, color: "from-orange-400 to-red-500" },
-    { name: "Jquery", icon: <SiJquery /> , color: "from-blue-500 to-indigo-600" },
+    { name: "NodeJS", icon: <FaNode /> , color: "from-blue-500 to-indigo-600" },
+    { name: "ExpressJS", icon: <SiExpress /> , color: "from-blue-500 to-indigo-600" },
+    { name: "MySQL", icon: <SiMysql /> , color: "from-blue-500 to-indigo-600" },
+    { name: "MongoDB", icon: <SiMongodb /> , color: "from-blue-500 to-indigo-600" },
     ];
 
     useEffect(() => {
@@ -48,11 +54,11 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="relative h-96 overflow-hidden">
+        <div className="relative h-[450px] overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center">
             {skills.map((skill, index) => {
               const angle = (index - currentIndex) * (360 / skills.length);
-              const radius = 155;
+              const radius = 165;
               const x = Math.cos((angle * Math.PI) / 180) * radius;
               const y = Math.sin((angle * Math.PI) / 180) * radius;
               

@@ -35,7 +35,7 @@ const Navbar = () => {
                 <div className='text-2xl font-bold text-slate-800'>Portfolio</div>
                 
                 <div className='hidden md:flex space-x-8'> {/* md override hidden for than 768px screens */}
-                    {['Home', 'Skills', 'Experience', 'About', 'Education', 'Contact'].map((item)=>
+                    {['Home', 'Skills', 'Experience','Projects','About', 'Education', 'Contact'].map((item)=>
                         <button onClick={()=>scrollToSection(item)} key={item} className='text-slate-700 hover:text-blue-600 transition-colors duration-200 capitalize font-medium'>
                             {item}
                         </button>
@@ -51,7 +51,7 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
             <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg">
-                {['Home', 'Skills', 'Experience', 'About', 'Education', 'Contact'].map((item) => (
+                {['Home', 'Skills', 'Experience','Projects', 'About', 'Education', 'Contact'].map((item) => (
                 <button
                     key={item}
                     onClick={() => scrollToSection(item)}
