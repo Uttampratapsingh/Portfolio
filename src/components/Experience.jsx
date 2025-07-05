@@ -5,7 +5,7 @@ const Experience = () => {
     {
       title: "Software Development Engineer",
       company: "Bluestock Fintech",
-      period: "Apr'25 - Jun'25",
+      period: "Apr'25 - May'25",
       description: "Contributed to the development of Bluestock Fintech’s official website as part of the frontend team. Built responsive, modular UI components using HTML5, CSS3, JavaScript, React, Redux, and Tailwind CSS.",
       technologies: ["React", "Tailwind", "Redux", "JavaScript"]
     },
